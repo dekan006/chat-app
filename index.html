@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat</title>
+</head>
+<body>
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    
+ 
+    <main>
+    <div class="container container-md mt-40">
+        <div id="authorization">
+            <div  class="row d-flex justify-content-around">
+                <button id="google" type="button" class="btn btn-secondary col-4 col-sm-3 col-md-4">Google</button>
+                <button id="facebook" type="button" class="btn btn-secondary col-4 col-sm-3 col-md-4">facebook</button>
+            </div>
+        </div>
+
+        <div id="dashboard" class="mt-40">
+            <div id="userDetails"></div>  
+            
+            <div id="divMessages" class="message border rounded container"></div>
+
+            <div class="container mt-40">
+                <div id="blockSendMessage" class="row d-flex justify-content-around">
+                
+                    <button id="sis" type="button" class="btn btn-success col-4 col-sm-3 col-md-4">Sis!</button>
+                    <button id="bro" type="button" class="btn btn-danger col-4 col-sm-3 col-md-4">Bro!</button>
+                </div>
+            </div>
+
+            <button id="logout" type="button" class="btn btn-warning container mt-40 ">Logout</button>
+        </div>  
+
+        <div class="row d-flex justify-content-around mt-40">
+            <button id="counterSis" type="button" class="btn-lg btn-success"></button>
+            <button id="counterBro" type="button" class="btn-lg btn-danger"></button>
+        </div>
+   
+    </div>
+    </main>
+
+    <script  src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+    <script  src="https://www.gstatic.com/firebasejs/7.13.2/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
